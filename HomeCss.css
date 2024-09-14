@@ -13,12 +13,13 @@
   --black_color: #000000;
   --white_color: #ffffff;
   --orange_color: #ff6600;
+  /* --orange_color: #ff0000; */
   --black_hover_color: #242323;
-  --orange_hover_color: #fa8e00;
+  --orange_hover_color: #fa8500;
 }
 
 /* ----------  nav-upper css ------------ */
-.nav-upper {
+#nav-upper {
   background-color: var(--orange_color);
   color: var(--white_color);
   font-size: 2rem;
@@ -54,6 +55,7 @@ header {
   height: 100%;
   width: 15vw;
 }
+
 #nav a {
   display: block;
   /* background-color: var(--orange_color); */
@@ -69,11 +71,13 @@ header {
   padding: 11px 50px 11px 11px;
   list-style: none;
 }
+
 .header__menu a {
   color: var(--black_color);
   font-weight: 500;
   text-decoration: none;
 }
+
 .header__menu a:hover {
   color: var(--orange_color);
 }
@@ -118,8 +122,11 @@ header {
     display: none;
   } */
 
+/* ------------------------------------------------------------------------------------------------- */
+
 /* ------------   hero_section css ------------ */
 #hero_section {
+  background-color: var(--white_color);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -139,10 +146,11 @@ header {
   color: var(--black_color);
   font-size: 48px;
   font-weight: 600;
+  line-height: 60px;
   /* border: #da0f0f 1px solid; */
 }
 
-.hero_text_container span {
+.hero_text_container .title span {
   color: var(--orange_color);
   /* border: #da0f0f 1px solid; */
 }
@@ -153,11 +161,16 @@ header {
   font-size: 1rem;
   /* border: #c5d81a 1px solid; */
 }
+
+.hero_text_container .description span {
+  color: var(--orange_color);
+  /* border: #da0f0f 1px solid; */
+}
 .hero_img_container {
   background: rgb(255, 75, 30);
   background: radial-gradient(
     circle,
-    rgba(255, 75, 30, 1) 0%,
+    var(--orange_color) 10%,
     rgba(255, 180, 162, 1) 24%,
     rgba(255, 213, 203, 1) 32%,
     rgba(255, 242, 239, 1) 39%,
@@ -171,16 +184,66 @@ header {
   /* border: #000000 1px solid; */
 }
 
+/* ------------  button_area css ------------ */
+.button_area {
+  margin-top: 15px;
+}
+
+.button {
+  border-radius: 25px;
+  background-color: var(--orange_color);
+  border: none;
+  color: var(--white_color);
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 15px 10px 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: var(--orange_hover_color);
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
 /* ------------   sepration section css ------------ */
 
 #sepration {
   /* border: #000000 1px solid; */
   height: 100px;
   width: 100%;
-  background: rgb(0, 0, 0);
+  background: var(--black_color);
   background: linear-gradient(
     4deg,
-    rgba(0, 0, 0, 1) 49%,
-    rgba(255, 255, 255, 1) 49%
+    var(--black_color) 49%,
+    var(--white_color) 49%
   );
 }
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* ------------   Services section section css ------------ */
