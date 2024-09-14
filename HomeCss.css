@@ -31,8 +31,10 @@
 
 /* ----------  nav css ------------ */
 header {
+  overflow: hidden;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 #nav {
   height: 90px;
@@ -142,7 +144,7 @@ header {
 }
 
 .hero_text_container .title {
-  margin-top: 45px;
+  margin-top: 25px;
   color: var(--black_color);
   font-size: 48px;
   font-weight: 600;
@@ -233,17 +235,100 @@ header {
 /* ------------   sepration section css ------------ */
 
 #sepration {
-  /* border: #000000 1px solid; */
-  height: 100px;
+  /* border: #eb0a0a 1px solid; */
+  height: 150px;
   width: 100%;
   background: var(--black_color);
   background: linear-gradient(
-    4deg,
+    5deg,
     var(--black_color) 49%,
-    var(--white_color) 49%
+    var(--white_color) 50%
   );
 }
 
 /* ------------------------------------------------------------------------------------------------- */
 
 /* ------------   Services section section css ------------ */
+#Services_section {
+  background: var(--black_color);
+  /* background-color:aqua; */
+  padding: 0px 80px 80px 80px;
+}
+.Services_text_container {
+  /* border: #fa8500 1px solid; */
+  color: var(--white_color);
+  line-height: 60px;
+  width: 90%;
+}
+.Services_text_container h2 {
+  font-size: 80px;
+  font-weight: 600;
+  color: var(--white_color);
+}
+.Services_text_container p {
+  font-size: 30px;
+  color: var(--white_color);
+}
+/* ---------------------Services_cards_container-------------------- */
+.Services_cards_container {
+  border: #ffffff 1.5px solid;
+  border-radius: 4%;
+  margin-top: 70px;
+  padding: 10px;
+
+  font-size: 23px;
+  background: var(--black_color);
+  color: var(--white_color);
+  display: flex;
+  /* justify-content: space-around; */
+}
+.Services_card_img {
+  margin-left: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(136, 136, 136, 1) 20%,
+    rgba(93, 93, 93, 1) 30%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  /* border: #fa8500 1px solid; */
+}
+.Services_card_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.Services_card_text {
+  width: 80%;
+  align-content: center;
+  padding: 50px;
+  line-height: 25px;
+  /* border: #fa8500 1px solid; */
+}
+.Services_card_text h3 {
+  color: var(--orange_color);
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+}
+.Services_card_text p {
+  color: var(--white_color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--white_color);
+}
+
+/* ------------   sepration 2 section css ------------ */
+
+#sepration_2 {
+  /* border: #eb0a0a 1px solid; */
+  height: 160px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    175deg,
+    var(--black_color) 49%,
+    var(--white_color) 50%
+  );
+}
