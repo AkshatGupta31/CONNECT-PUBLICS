@@ -7,7 +7,8 @@
   margin: 0%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* user-select:none; */
+  user-select:none;
+
 }
 
 :root {
@@ -354,7 +355,8 @@ header {
   margin-left: 10px;
 }
 .Con_form_box2 input {
-  width: 34vw;
+  min-width: 34vw;
+  max-width: 34vw;
   height: 42px;
   border-radius: 30px;
   border: 1px var(--black_color) solid;
@@ -362,12 +364,14 @@ header {
   margin-bottom: 15px;
 }
 #Message_box {
-  width: 34vw;
-  height: 42px;
+  min-width: 34vw;
+  max-width: 34vw;
+  min-height: 42px;
   border-radius: 30px;
   border: 1px var(--black_color) solid;
   margin-top: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .Con_form_box2 input::placeholder {
@@ -496,7 +500,7 @@ width: 13%;
   /* border: 1px solid#ff5100; */
   /* height: 65vh; */
   width: 100%;
-  padding: 100px 0px 45px 0px;
+  padding: 60px 0px 45px 0px;
   background-color: var(--black_color);
   color: var(--white_color);
 }
