@@ -20,7 +20,7 @@
 }
 
 /* ------------  button_area css ------------ */
-.button_area {
+/* .button_area {
     margin-top: 15px;
   }
   
@@ -62,7 +62,7 @@
     opacity: 1;
     right: 0;
   }
-  
+   */
 
 /* ----------  nav css ------------ */
 header {
@@ -166,7 +166,7 @@ header {
 #Services_section {
     background: var(--white_color);
     /* background-color:aqua; */
-    padding: 90px 60px 80px 60px;
+    padding: 60px 60px 80px 60px;
   
   }
   .Services_text_container {
@@ -230,6 +230,11 @@ header {
     color: var(--black_color);
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
+
+  }
+.Services_card_text p b {
+    font-weight: 500;
     font-size: 20px;
 
   }
