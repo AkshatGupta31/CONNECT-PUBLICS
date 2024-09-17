@@ -75,8 +75,28 @@ header {
   text-decoration: none;
 }
 
-.header__menu a:hover {
+/* .header__menu a:hover {
   color: var(--orange_color);
+} */
+
+.navbar-link {
+  width: max-content;
+  position: relative;
+}
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: var(--orange_color);
+  transition: 0.3s ease-in-out;
+  transform: scaleX(0);
+}
+
+.navbar-link:hover::after {
+  transform: scaleX(1);
 }
 
 /* ------------ menu (3 bars) css for responsive ------------ */

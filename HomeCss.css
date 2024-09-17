@@ -7,8 +7,7 @@
   margin: 0%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  user-select:none;
-
+  user-select: none;
 }
 
 :root {
@@ -29,10 +28,27 @@
   font-weight: 500;
   padding: 10px;
   text-align: center;
+  position: absolute;
+  top: -100px; /* Start offscreen */
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  animation: slideDown 1s ease forwards; /* Trigger animation */
+}
+
+/* Keyframes for the sliding effect */
+@keyframes slideDown {
+  from {
+    top: -100px; /* Initial position (off-screen) */
+  }
+  to {
+    top: 0; /* Final position */
+  }
 }
 
 /* ----------  nav css ------------ */
 header {
+  margin-top: 50px; /* Add space for the animated company name */
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -49,7 +65,9 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   /* border: #000000 1px solid; */
 }
 
@@ -83,8 +101,28 @@ header {
   text-decoration: none;
 }
 
-.header__menu a:hover {
+/* .header__menu a:hover {
   color: var(--orange_color);
+} */
+
+.navbar-link {
+  width: max-content;
+  position: relative;
+}
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: var(--orange_color);
+  transition: 0.3s ease-in-out;
+  transform: scaleX(0);
+}
+
+.navbar-link:hover::after {
+  transform: scaleX(1);
 }
 
 /* ------------ menu (3 bars) css for responsive ------------ */
@@ -135,7 +173,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* padding: 70px 0px 0px 0px; */
+  /* padding: 15px 0px 0px 0px; */
   /* border: #000000 1px solid; */
 }
 
@@ -147,7 +185,7 @@ header {
 }
 
 .hero_text_container .title {
-  margin-top: 25px;
+  margin-top: 20px;
   color: var(--black_color);
   font-size: 48px;
   font-weight: 600;
@@ -156,6 +194,8 @@ header {
 }
 
 .hero_text_container .title span {
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 1s ease-in-out; /* Smooth transition for fading effect */
   color: var(--orange_color);
   /* border: #da0f0f 1px solid; */
 }
@@ -184,7 +224,7 @@ header {
   /* border: #000000 1px solid; */
 }
 .hero_img_container img {
-  height: 500px;
+  height: 460px;
   width: 580px;
   /* border: #000000 1px solid; */
 }
@@ -256,7 +296,6 @@ header {
   background: var(--black_color);
   /* background-color:aqua; */
   padding: 0px 60px 80px 60px;
-
 }
 .Services_text_container {
   /* border: #fa8500 1px solid; */
@@ -537,7 +576,7 @@ width: 13%;
   font-size: 1.438rem;
 }
 
-.footer_box2{
+.footer_box2 {
   text-align: left;
   width: 75vw;
   /* border: 1px solid#ff5100; */
