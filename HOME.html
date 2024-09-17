@@ -204,7 +204,10 @@
         <div class="Contact_items">
 
           <div class="Con_form_box2">
-            <form action="" method="post">
+            <form action="https://api.web3forms.com/submit" method="post" id="form">
+
+              <input type="hidden" name="access_key" value="7c91e2a9-44ca-467f-94f9-9cc666891de5">
+              
               <label>First name*</label><br />
               <input
                 type="text"
@@ -241,6 +244,8 @@
               </textarea><br />
               
               <button class="button" type="submit" value="Submit" ><span>Submit  </span></button>
+              <button class="button" type="reset" value="reset" ><span>Clear  </span></button>
+              <div id="result"></div>
             </form>
           </div>
 
