@@ -14,6 +14,9 @@
     <link rel="icon" href="img/FVICON IMG WHITE.png" />
     <link rel="stylesheet" href="HomeCss.css" />
     <link rel="stylesheet" href="Js.js" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
 
   <body>
@@ -53,7 +56,7 @@
     </header>
 
     <main>
-      <section id="hero_section">
+      <section id="hero_section" data-aos="fade-up">
         <div class="hero_text_container">
           <h1 class="title" >
             Turning dreams into <span id="tagline" >iconic brands</span>
@@ -75,15 +78,15 @@
         </div>
 
         <div class="hero_img_container">
-          <img src="img/hero section.png" alt="hero image" />
+          <img src="img/hero_section_GIF.gif" alt="hero image" />
         </div>
       </section>
 
       <!-- /* ------------   sepration section css ------------ */ -->
-      <section id="sepration"></section>
+      <section id="sepration" class="before-services" ></section>
 
       <!-- ------------   Services 1 section section css ------------ -->
-      <section id="Services_section">
+      <section id="Services_section"class="services-section" >
         <div class="Services_text_container">
           <h2>Our Services</h2>
           <p>
@@ -118,7 +121,7 @@
               <button class="button"><span>Learn More </span></button>
             </a>
           </div>
-          <div class="Services_card_img">
+          <div class="Services_card_img GIF_OF_INFLU_MAR">
             <img
               src="img/influencer marketing.png"
               alt="Influencer Marketing"
@@ -197,7 +200,7 @@
       </section>
 
       <!-- /* ------------   sepration 2 section css ------------ */ -->
-      <section id="sepration_2"></section>
+      <section id="sepration_2" class="after-services" ></section>
 
   <!-- /* ------------   Contact Form section css ------------ */ -->
       <section id="Contact_section">
@@ -352,5 +355,13 @@
         </div>
     </footer>
     <script src="Js.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,  // Animation duration in milliseconds
+        easing: 'ease-in-out',  // Animation easing
+        once: true,  // Whether animation should happen only once - while scrolling down
+        mirror: false,  // Whether elements should animate out while scrolling past them
+      });
+    </script>
   </body>
 </html>

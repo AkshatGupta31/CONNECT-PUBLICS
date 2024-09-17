@@ -7,7 +7,10 @@
   margin: 0%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  user-select: none;
+  /* user-select: none; */
+}
+*::selection{
+  background-color: #f45f5f;
 }
 
 :root {
@@ -224,8 +227,8 @@ header {
   /* border: #000000 1px solid; */
 }
 .hero_img_container img {
-  height: 460px;
-  width: 580px;
+  height: auto;
+  width: auto;
   /* border: #000000 1px solid; */
 }
 
@@ -272,6 +275,7 @@ header {
   opacity: 1;
   right: 0;
 }
+
 
 /* ------------------------------------------------------------------------------------------------- */
 
