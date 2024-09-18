@@ -17,6 +17,8 @@
   --black_color: #000000;
   --white_color: #ffffff;
   --orange_color: #ff5100;
+  --white_glow_color: #848181cf;
+  --black_glow_color: #3d3c3c9b;
   /* --orange_color: #ff0000; */
   --black_hover_color: #242323;
   --orange_hover_color: #fa8500;
@@ -331,16 +333,17 @@ header {
 }
 .Services_card_img {
   margin-left: 10px;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 0%,
     rgba(136, 136, 136, 1) 20%,
     rgba(93, 93, 93, 1) 30%,
     rgba(0, 0, 0, 1) 50%
-  );
+  ); */
   /* border: #fa8500 1px solid; */
 }
 .Services_card_img img {
+  filter: drop-shadow(8px 7px 19px var(--white_glow_color));
   height: 100%;
   width: 100%;
 }
