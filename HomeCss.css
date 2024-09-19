@@ -16,10 +16,10 @@
 :root {
   --black_color: #000000;
   --white_color: #ffffff;
-  --orange_color: #ff5100;
+  /* --orange_color: #4c00ff; */
   --white_glow_color: #848181cf;
   --black_glow_color: #3d3c3c9b;
-  /* --orange_color: #ff0000; */
+  --orange_color: #ff5500;
   --black_hover_color: #242323;
   --orange_hover_color: #fa8500;
 }
