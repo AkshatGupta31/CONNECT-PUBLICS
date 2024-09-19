@@ -25,7 +25,7 @@
   --orange_hover_color: #fa8500;
 
   --yellow_color: #f8e9a1;
-  --redies_color: #f76c6c;
+  --redies_color: #ff5353;
   --sky_blue: #a8d0e6;
   --blue_color: #374785;
 }
@@ -224,15 +224,7 @@ header {
   /* border: #da0f0f 1px solid; */
 }
 .hero_img_container {
-  background: rgb(255, 75, 30);
-  background: radial-gradient(
-    circle,
-    var(--orange_color) 10%,
-    rgba(255, 180, 162, 1) 24%,
-    rgba(255, 213, 203, 1) 32%,
-    rgba(255, 242, 239, 1) 39%,
-    rgba(255, 255, 255, 1) 48%
-  );
+  filter: drop-shadow(8px 7px 19px var(--black_glow_color));
   /* border: #000000 1px solid; */
 }
 .hero_img_container img {
@@ -316,6 +308,7 @@ header {
   width: 90%;
 }
 .Services_text_container h2 {
+  color: var(--blue_color);
   font-size: 80px;
   font-weight: 600;
 }
@@ -361,7 +354,7 @@ header {
   /* border: #fa8500 1px solid; */
 }
 .Services_card_text h3 {
-  color: var(--orange_color);
+  color: var(--redies_color);
   width: 100%;
   font-size: 40px;
   font-weight: 600;
