@@ -9,18 +9,20 @@
   scroll-behavior: smooth;
   /* user-select: none; */
 }
+
+/* ------------- This selection you Works when the user select any text.------------- */
 *::selection {
-  background-color: var(--redies_color);
+  background-color: var(--orange_hover_color);
   color: var(--black_color);
 }
 
 :root {
   --black_color: #000000;
   --white_color: #ffffff;
-  --orange_color: #374785;
+  /* --orange_color: #374785; */
   --white_glow_color: #848181cf;
   --black_glow_color: #3d3c3c9b;
-  /* --orange_color: #ff5500; */
+  --orange_color: #ff5500;
   --black_hover_color: #242323;
   --orange_hover_color: #fa8500;
 
@@ -240,7 +242,7 @@ header {
 
 .button {
   border-radius: 25px;
-  background-color: var(--redies_color);
+  background-color: var(--orange_color);
   border: none;
   color: var(--white_color);
   text-align: center;
@@ -266,8 +268,8 @@ header {
   transition: 0.3s;
 }
 .button:hover {
-  background-color: var(--sky_blue);
-  color: var(--blue_color);
+  background-color: var(--orange_hover_color);
+  color: var(--white_color);
 }
 .button:hover span {
   padding-right: 25px;
@@ -278,7 +280,7 @@ header {
   right: 0;
 }
 
-/* ------------------------------------------------------------------------------------------------- */
+/* --------------------------------main section--------------------------------------- */
 
 /* ------------   sepration section css ------------ */
 
@@ -289,7 +291,7 @@ header {
   background: var(--black_color);
   background: linear-gradient(
     5deg,
-    var(--yellow_color) 49%,
+    var(--black_color) 49%,
     var(--white_color) 50%
   );
 }
@@ -298,8 +300,8 @@ header {
 
 /* ------------   Services section section css ------------ */
 #Services_section {
-  background: var(--yellow_color);
-  color: var(--blue_color);
+  background: var(--black_color);
+  color: var(--white_color);
   /* background-color:aqua; */
   padding: 0px 60px 80px 60px;
 }
@@ -308,17 +310,17 @@ header {
   width: 90%;
 }
 .Services_text_container h2 {
-  color: var(--blue_color);
+  color: var(--white_color);
   font-size: 80px;
   font-weight: 600;
 }
 .Services_text_container p {
   font-size: 30px;
-  color: var(--blue_color);
+  color: var(--white_color);
 }
 /* ---------------------Services_cards_container-------------------- */
 .Services_cards_container {
-  border: var(--blue_color) 1.5px solid;
+  border: var(--white_color) 1.5px solid;
   border-radius: 50px;
   margin-top: 70px;
   padding: 30px;
@@ -354,7 +356,7 @@ header {
   /* border: #fa8500 1px solid; */
 }
 .Services_card_text h3 {
-  color: var(--redies_color);
+  color: var(--white_color);
   width: 100%;
   font-size: 40px;
   font-weight: 600;
@@ -375,7 +377,7 @@ header {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     175deg,
-    var(--yellow_color) 49%,
+    var(--black_color) 49%,
     var(--white_color) 50%
   );
 }
@@ -451,7 +453,7 @@ header {
   /* height: 65vh; */
   width: 100%;
   padding: 60px 0px 45px 0px;
-  background-color: var(--blue_color);
+  background-color: var(--black_color);
   color: var(--white_color);
 }
 .footer_items {
